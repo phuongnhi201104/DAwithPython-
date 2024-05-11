@@ -37,7 +37,8 @@ def transform_text(text):
         y.append(ps.stem(i))
 
     return " ".join(y)
-
+joblib.load('DAwithPython/vectorizer.pkl')
+joblib.load('DAwithPython/model1.pkl')
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model1.pkl','rb'))
 
